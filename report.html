@@ -12921,7 +12921,8 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Here, we took Adaboost model.Adaboost model is fast algorithm.Adaboost model use decision tree (means tree shape model which take decisions).Adaboost first train some part of data if any misclassification in labels it will train data again and again till no further improvement on training set.Main advantage of this Adaboost model  is it mainly concentrate on misclassified labels.</p>
+<p>Here, I took Adaboost model.Adaboost model is fast algorithm.In this model we take the data and train it until we receive  accurate outcome (means till all labels classified accordingly).For example :If we want to divide keys of different sizes. what will we do? First  we will classify those into big keys and small keys we do the same thing until total keys ar separated correctly into their sizes. AdaBoost model also does the same thing.</p>
+<h5 id="Detail-Adaboost:">Detail Adaboost:<a class="anchor-link" href="#Detail-Adaboost:">&#182;</a></h5><p>AdaBoost Classifier creates strong learner using weak learners.Once the testing and training set is divided.Decisions stumps are created.These decision stumps are also called as one-level decision trees and here they are considered as weak learners. A weak learner is defined to be a classifier that is only slightly correlated with the true classification (it can label examples better than random guessing).At first it gives equal weight to each observation, if the prediction is incorrect it changes the sample weight according to the prediction and again another classification, this sequence of steps are continued untill we reach a best prediction.So every time a weak learner is modified by changing samples and weights so that producing a new learner.Again it is checked and the process is repeated.</p>
 <p>(<a href="https://machinelearningmastery.com/boosting-and-adaboost-for-machine-learning/,https://machinelearningmastery.com/boosting-and-adaboost-for-machine-learning/">https://machinelearningmastery.com/boosting-and-adaboost-for-machine-learning/,https://machinelearningmastery.com/boosting-and-adaboost-for-machine-learning/</a>)</p>
 
 </div>
@@ -13124,6 +13125,8 @@ Naive predictor results : [Accuracy score: 0.2478, F-score: 0.2917]</p>
 <p>3.education</p>
 <p>4.education num</p>
 <p>5.hour_per_week</p>
+<p>One's salary depends on workclass means they are private or government workers.For some jobs government will give more salary compared to private so occupation was placed in second position and position of person depends on education so it takes 3 place.
+And salary depends on how many hours they work.</p>
 
 </div>
 </div>
